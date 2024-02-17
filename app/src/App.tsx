@@ -1,10 +1,10 @@
- 
+import Layout from "./layout";
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <Layout>
+      <p>hello word</p>
+    </Layout>
   );
 }
 
