@@ -42,10 +42,10 @@ const Sidebar = () => {
                     <MenuItem icon={IpnIcon} title='IPNs' />
                     <GrayLine />
 
-                    <div className="flex flex-row gap-x-4">
+                    <div className="flex flex-row gap-x-4 flex-wrap">
                         <div className="flex flex-row gap-2 items-center">
                             <img className='w-[40px] h-[40px] object-cover' src={avatar} alt="avatar" />
-                            <div className="flex flex-col gap-1">
+                            <div className="flex flex-col gap-1 text-sm">
                                 <b className='text-[--white]'>Frankie Evans</b>
                                 <span className='text-[--gray]'>Frankie@gmail.com</span>
                             </div>
