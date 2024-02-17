@@ -11,8 +11,10 @@ const MenuItems = ({ icon, title, children }: MenuItemsProps) => {
 
     return (
         <>
-            <div className='flex flex-col   gap-y-[12px]  '>
-                <div onClick={() => setOpen(prevOpen => !prevOpen)} className='flex flex-row gap-x-[12px] min-h-[48px] items-center cursor-pointer'>
+            <div className=' flex flex-col   gap-y-[12px]  '>
+                <div
+                    onClick={() => setOpen(prevOpen => !prevOpen)}
+                    className={`flex flex-row gap-x-[12px] min-h-[48px] items-center cursor-pointer ${open?"bg-[--menuOpen] rounded-[--radius] px-[10px]":"ps-[10px]"}`}>
                     <img src={icon} alt={title} />
                     <span className='flex-grow'>{title}</span>
                     <img src={open ? ArrowUp : ArrowDown} alt='arrow' />
